@@ -1,6 +1,7 @@
 import argparse
 import json
 
+from sql_gpt.constants import MAX_AGENT_RECURSION_LIMIT
 from sql_gpt.graph import Graph
 from sql_gpt.llm import LLM
 from sql_gpt.querier import Querier
@@ -43,4 +44,4 @@ if __name__ == "__main__":
         ),
     )
     graph = Graph().graph
-    graph.invoke(chat_state)
+    graph.invoke(chat_state, config={"recursion_limit": MAX_AGENT_RECURSION_LIMIT})
