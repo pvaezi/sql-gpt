@@ -1,0 +1,7 @@
+- State: string. The specific state or region within a larger geographic area. Examples: Chongqing, Germany, UK, Shanghai, Thailand.
+- Region: string. The broader geographic region that includes multiple states. Categories: 1. North America 2. Europe 3. Greater China 4. Rest of Asia 5. Rest of the World
+- iPhoneSales: float. The number of iPhones sold in each state/region, measured in millions units.
+- iPadSales: float. The number of iPads sold in each state/region, measured in millions units.
+- MacSales: float. The number of Mac computers sold in each state/region, measured in millions units.
+- Wearables: float. The number of wearable devices (e.g., Apple Watch, AirPods) sold in each state/region, measured in millions units.
+- ServicesRevenue: float. Revenue generated from Apple's digital services (e.g., iCloud, App Store, Apple Music), measured in billions of U.S. dollars.

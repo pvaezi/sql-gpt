@@ -1,0 +1,68 @@
+# Byte-compiled / cached files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+venv/
+env/
+.venv/
+.python-version
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Logs and debugging files
+*.log
+*.out
+*.err
+debug.log
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables and credentials
+.env
+*.env
+*.secrets
+config.ini
+
+# MyPy cache
+.mypy_cache/
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+.coverage
+htmlcov/
+*.cover
+.cache/
+
+# Sphinx documentation
+docs/_build/
+*.rst~
+*.doctree
+
+# Pre-commit hooks cache
+.pre-commit-hooks/
+
+# Docker and deployment
+docker-compose.override.yml
+*.dockerfile
+*.envrc
+
+# MacOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db

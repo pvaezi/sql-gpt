@@ -1,0 +1,34 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: 24.2.0 # Use the latest stable version
+    hooks:
+      - id: black
+        language_version: python3 # Use the system's default Python 3
+
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.12.0 # Use the latest stable version
+    hooks:
+      - id: isort
+        args: ["--profile", "black"]
+
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.1.0 # Use the latest stable version
+    hooks:
+      - id: flake8
+        additional_dependencies: [flake8-bugbear, flake8-comprehensions]
+        args: ["--max-line-length=99"]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-yaml
+      - id: check-json
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: debug-statements
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.8.0 # Use the latest stable version
+    hooks:
+      - id: mypy
+        additional_dependencies: [types-requests] # Add necessary type stubs if needed
